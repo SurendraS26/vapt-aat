@@ -41,7 +41,7 @@ A private bridge (`br0`, 192.168.100.1/24) was created on the host. Kali was giv
 netsh interface ip set address "Ethernet" static 192.168.100.20 255.255.255.0
 ```
 
-![Windows IP configuration and OS version](fig1_windows_ipconfig.png)
+![Windows IP configuration and OS version](/screenshots/fig1_windows_ipconfig.png)
 
 *Figure 1: Static IP configured on the Windows 10 target. The Command Prompt banner shows the OS version, 10.0.19045.2965.*
 
@@ -51,7 +51,7 @@ netsh interface ip set address "Ethernet" static 192.168.100.20 255.255.255.0
 sudo nmap -Pn -sV -O --top-ports 1000 -T4 --script vuln -oN nmap_report.txt 192.168.100.20
 ```
 
-![Scan of default configuration](fig2_scan_default.png)
+![Scan of default configuration](/screenshots/fig2_scan_default.png)
 
 *Figure 2: The host is up, but all 1000 scanned ports are filtered.*
 
@@ -71,7 +71,7 @@ The same scan was repeated:
 sudo nmap -Pn -sV -O --top-ports 1000 -T4 --script vuln -oN nmap_report2.txt 192.168.100.20
 ```
 
-![Scan after enabling file sharing](fig3_scan_after_sharing.png)
+![Scan after enabling file sharing](/screenshots/fig3_scan_after_sharing.png)
 
 *Figure 3: Open ports, OS detection and vulnerability script results.*
 
