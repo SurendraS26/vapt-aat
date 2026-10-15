@@ -1,6 +1,5 @@
 # VAPT Assignment Report
 
-| | |
 |---|---|
 | **Student Name** | SURENDRA S |
 | **USN** | 1DS23CY059 |
